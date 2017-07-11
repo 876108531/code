@@ -1,0 +1,18 @@
+#model {
+
+}
+#model>section{
+	width: 100%;
+
+	border:none;
+}
+#model>section>ul {
+	overflow: hidden;
+}
+#model>section>ul>li {
+	float: left;
+	width: 31%;
+	margin: 2% 0 1% 1.5%;
+}
+#model>aside { display: none; }
+#model>article { display: none; }

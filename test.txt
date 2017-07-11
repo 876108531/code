@@ -1,0 +1,19 @@
+var a = 1,
+	b = 2;//最有效率的写法
+
+var c = Array();
+c["A"] = "app";
+c["B"] = "boy";
+c["C"] = "cat";
+
+function addLoadEvent (func) {
+	var oloadload = window.onload;
+	if (typeof window.onload != 'function') {
+		window.onload = func;
+	} else{
+		window.onload = function(argument) {
+			oloadload();
+			func();
+		}
+	};
+}
